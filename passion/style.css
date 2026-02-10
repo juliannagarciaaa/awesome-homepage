@@ -1,18 +1,32 @@
 body {
 background-color: ivory;
-font-family:p22-folk-art-block, sans-serif ;
+font-family:p22-folk-art-cross, sans-serif ;
 font-size:  20px;
-color: magenta;
+color: black;
 
 h1{
-color: magenta;
+color: ivory;
 text-align: center;
-background-color: yellow;
+background-color: black;
+}
+h1:hover{
+    color:hotpink
+}
+a{
+color: blue;
+font-size: 20px;
+}
+a:hover{
+color:hotpink;
+}
+h2:hover{
+    color:hotpink
+}
+
+
+
 }
 
 
 
 
-
-
-}
