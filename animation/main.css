@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box ;
+}
+
+.square {
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+    /* animation-name:test;
+    animation-duration:2s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
+    animation-fill-mode: both; */
+
+    animation: test 2s 4s infinite ease-in-out alternate both;
+
+}
+
+@keyframes test {
+    0% {
+        background-color: red;
+    }
+    50% {
+        background-color: blue;
+    }
+    100% {
+        background-color: yellow;
+    }
+
+}
+
+body {
+    margin: 0;
+}
+
+.container {
+    background-color: lightpink;
+    height:100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+
+    overflow: hidden;
+
+    animation: blink 2s infinite alternate;
+}
+
+
+@keyframes blink {
+    0% {
+        scale:1 1;
+    }
+    100% {
+        scale:.8 0;
+    }
+}
+
+
+
+.circle {
+    background-color: aquamarine;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+    0% {
+        background: aquamarine ;
+        scale: 1;
+    }
+    100% {
+        background-color: lightyellow;
+        scale: 1.4;
+    }
+
+}
+
+.box {
+    background-color: aquamarine;
+    width: 50px;
+    height: 50px;
+    animation: spin 4s infinite linear;
+}
+
+@keyframes spin {
+    0% {
+        rotate: 0;
+        scale: 1;
+    }
+    50% {
+        scale: 2;
+    }
+    100% {
+        rotate: 360deg;
+        scale: 1;
+    }
+}
+
+.mover {
+    background-color: aquamarine;
+    width: 150px;
+    height: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    animation: move 4s infinite;
+}
+
+@keyframes move {
+    0% {
+        left: -150px;
+    }
+    100% {
+        left: 100%;
+    }
+}
+
+.changer {
+     background-color: aquamarine;
+     width: 100px;
+     height: 100px;
+     transition:background 2s, 
+                border-radius 2s,
+                rotate 2s;
+}
+
+.changer:hover {
+    background-color: blueviolet;
+    border-radius: 100%;
+    rotate: 360deg;
+}

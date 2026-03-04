@@ -1,0 +1,108 @@
+body {
+    background-color: lightcyan;
+}
+
+.emptybowl img {
+    width: 200px;
+}
+
+.solhungry img {
+    width: 350px;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.top img{
+  display: block;
+}
+
+.emptybowl, .solhungry{
+    margin-top: 100px;
+  display: inline-block;   
+  outline: none; 
+  margin-bottom: 200px;          
+}
+
+.top {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 60px;
+  position: relative;  
+}
+
+.soltalking {
+    font-size: larger;
+    color: blue;
+    display: inline-block;
+    outline: 5px dotted blue;
+    padding: 8px;
+    position: absolute;
+    margin-top: 100px;
+    left: 335px;   
+    top: 100px;    
+}
+
+.me {
+    font-size: larger;
+    color: magenta;
+    display: inline-block;
+    outline: 5px dotted magenta;
+    padding: 8px;
+    position: absolute;
+    margin-top: 100px;
+    left: 910px;   
+    top: 430px;
+    margin-bottom: 200px;
+}
+
+.kibble1 img{
+    display: flex;
+    position: center;
+    flex-direction: column;
+    gap: 20x;
+    width: 50px;
+    margin-top: 100px;
+    margin-left: 450px;
+}
+
+.bowl, .thx {
+    margin-top: 100px;
+  display: inline-block;   
+  outline: none;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+
+
+
+
+.bowl img{
+    width: 200px;
+    margin-bottom: 100px;
+}
+
+.thx img{
+    width: 350px;
+    margin-bottom: 100px;
+}
+
+.sol {
+    font-size: larger;
+    color: blue;
+    display: inline-block;
+    outline: 5px dotted blue;
+    padding: 8px;
+    margin-bottom: 370px;
+}

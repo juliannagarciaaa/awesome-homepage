@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box ;
+}
+
+.main-container {
+    background-color: turquoise;
+    padding:10px;
+    height:600px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    background-color: seagreen;
+    height: 20%;
+    flex-direction: row;
+    display: flex;
+    gap: 10px;
+}
+
+.top-item {
+    background-color: deeppink;
+    width: 100%;
+}
+
+.bottom {
+    background-color: slateblue;
+    height: 80%;
+}
