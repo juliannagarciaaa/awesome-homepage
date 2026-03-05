@@ -45,16 +45,16 @@ body {
 
     overflow: hidden;
 
-    animation: blink 2s infinite alternate;
+    animation: test 2s infinite alternate;
 }
 
 
-@keyframes blink {
+@keyframes test {
     0% {
-        scale:1 1;
+        scale: ;
     }
     100% {
-        scale:.8 0;
+        scale: ;
     }
 }
 
