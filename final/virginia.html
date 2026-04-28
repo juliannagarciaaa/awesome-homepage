@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Virginia</title>
+  <link rel="stylesheet" href="va photos.css">
+</head>
+<body>
+
+  <div class="gallery" onclick="nextImage()">
+    <img id="photo" src="Va1.JPG">
+  </div>
+
+  <script>
+    let images = [
+      "Va1.JPG",
+      "Va2.JPG",
+      "Va3.JPG",
+      "Va4.JPG",
+      "Va5.JPG"
+    ];
+
+    let index = 0;
+
+    function nextImage() {
+      index = (index + 1) % images.length;
+      document.getElementById("photo").src = images[index];
+    }
+  </script>
+
+</body>
+</html>

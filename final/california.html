@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>California</title>
+  <link rel="stylesheet" href="ca photos.css">
+</head>
+<body>
+
+  <div class="gallery" onclick="nextImage()">
+    <img id="photo" src="Cali1.JPG">
+  </div>
+
+  <script>
+    let images = [
+      "Cali1.JPG",
+      "Cali2.JPG",
+      "Cali3.JPG",
+      "Cali4.JPG",
+      "Cali5.JPG"
+    ];
+
+    let index = 0;
+
+    function nextImage() {
+      index = (index + 1) % images.length;
+      document.getElementById("photo").src = images[index];
+    }
+  </script>
+
+</body>
+</html>

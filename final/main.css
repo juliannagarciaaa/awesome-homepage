@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  color: black;
+  font-family: "dottonoji", sans-serif;
+
+ background-image: url(CaliHouse.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#toggle {
+  display: none;
+}
+
+.title {
+  font-size: 4rem;
+  cursor: pointer;
+  transition: 0.3s;
+  color: lightyellow;
+}
+
+.title:hover {
+  opacity: 0.6;
+}
+
+.text {
+  opacity: 0;
+  max-width: 90vw;
+  margin-top: 20px;
+  transition: 0.3s;
+  text-align: center;
+}
+.text p {
+    display: inline;
+  color: black;
+  line-height: 1.8;
+  padding: 2px 6px;
+  background-color: lightyellow;
+
+  box-decoration-break: clone;
+  -webkit-box-decoration-break: clone;
+}
+
+#toggle:checked ~ .text {
+  opacity: 1;
+}
+
+.text a {
+  color: goldenrod;
+  text-decoration-style: dotted;
+}
+
+.text a:hover {
+  opacity: 0.6;
+}
